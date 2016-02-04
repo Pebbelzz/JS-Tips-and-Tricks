@@ -7,5 +7,5 @@
   var numbers = [10, 3, 1 ,17, 33, 67, 4, 15];
   function numbersNeedSorting(a, b) {
      return a - b;
-}
+  }
   numbers.sort(numbersNeedSorting);
