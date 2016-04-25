@@ -9,7 +9,7 @@
      return a - b;
   }
   numbers.sort(numbersNeedSorting);
-
+```
 
 <h3>Sum all the numbers in an Array</h3>
 ```javascript
@@ -21,3 +21,4 @@
     }
   );
   console.log(sum);  
+```
