@@ -12,6 +12,7 @@
 ```
 
 <h3>Sum all the numbers in an Array</h3>
+<p>Using <strong>forEach</strong> Method</p>
 ```javascript
   var numbers = [1, 2, 3];
   var sum = 0;
