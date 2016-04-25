@@ -9,3 +9,15 @@
      return a - b;
   }
   numbers.sort(numbersNeedSorting);
+
+
+<h3>Sum all the numbers in an Array</h3>
+```javascript
+  var numbers = [1, 2, 3];
+  var sum = 0;
+  numbers.forEach(
+    function sumArray(num){
+      sum += num;
+    }
+  );
+  console.log(sum);  
