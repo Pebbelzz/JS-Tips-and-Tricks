@@ -26,7 +26,7 @@
 
 <h3>Sum all Primes up to provided value</h3>
 ```javascript
-```javascript
+
 function sumPrimes(num) {
 	var numArray = [];
 	var primeArray = [];
