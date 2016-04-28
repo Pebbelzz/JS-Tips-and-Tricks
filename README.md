@@ -11,6 +11,8 @@
   numbers.sort(numbersNeedSorting);
 ```
 
+<h2>Algorithims</h2>
+
 <h3>Sum all the numbers in an Array</h3>
 <p>Using <strong>forEach</strong> Method</p>
 ```javascript
@@ -65,5 +67,29 @@ function sumPrimes(num) {
 		}
 	);
 	return sum;
+}
+```
+
+<h3>Convert Binary to English</h3>
+
+```javascript
+function binaryAgent(str) {
+  //split str into an array
+  str = str.split(" ");
+  var asciiArray = [];
+  
+  //on each binary now in array, turn it into a decimal number
+  //and then get what character it should be based on dec number
+  str.forEach(
+    function(bin){
+      bin = parseInt(bin, 2).toString(10);
+      bin = String.fromCharCode(bin);
+      asciiArray.push(bin);
+    }
+  );
+  
+  //join array into string
+  asciiArray = asciiArray.join("");
+  return asciiArray;
 }
 ```
