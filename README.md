@@ -23,3 +23,47 @@
   );
   console.log(sum);  
 ```
+
+<h3>Sum all Primes up to provided value</h3>
+```javascript
+```javascript
+function sumPrimes(num) {
+	var numArray = [];
+	var primeArray = [];
+
+	//make array of all numbers up to num starting with 2(the first prime);
+	for(var n= 2; n <= num; n++){
+		numArray.push(n);
+	}
+    
+    //take each number in numArray and test it to see if it is 
+    //divisible by any number from 2 up until number-1
+    //if it is, then toggle primeStatus to false and the number
+    //is not prime
+	numArray.forEach(
+		function(number){
+			primeStatus = true;
+			for(var i = 2; i < number; i++){
+				if(number%i === 0){
+					primeStatus = false;	
+				}
+			}
+            //of prime status is still true after all tests by division
+            //then put it in primeArray
+			if(primeStatus === true){
+				primeArray.push(number);
+			}
+		}
+	);
+    
+  
+    //sum all the values in Prime Array
+	var sum = 0;
+	primeArray.forEach(
+		function sumArray(value){
+			sum += value;
+		}
+	);
+	return sum;
+}
+```
